@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnRotate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="420dp"
+        android:text="Mourya Infotech"
+        android:textColor="#C3127B"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/btnAlpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Alpha"
+                tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/btnTranslate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Translate"
+                tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnScale"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="602dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="33dp"
+        android:layout_toEndOf="@+id/btnRotate"
+        android:layout_weight="1"
+        android:text="Scale"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btnRotate"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_marginBottom="31dp"
+        android:layout_weight="1"
+        android:text="Rotate"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+
+
+</RelativeLayout>
